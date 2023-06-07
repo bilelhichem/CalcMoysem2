@@ -2,6 +2,8 @@ package com.example.sem2022;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,66 +22,91 @@ Button calc ;
         calc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if ( Double.parseDouble(ed1.getText().toString()) > 20  ) {}
-                double value1 = Double.parseDouble(ed1.getText().toString());
-                double value2 = Double.parseDouble(ed2.getText().toString());
-                double value3 = Double.parseDouble(ed3.getText().toString());
-                double result = CalcAnalyse(value1, value2, value3);
-                String formattedResult = String.format("%.2f", result / 5); // Formater le résultat avec deux décimales
-                show1.setText(formattedResult);
-                double value4 = Double.parseDouble(ed4.getText().toString());
-                double value5 = Double.parseDouble(ed5.getText().toString());
-                double value6 = Double.parseDouble(ed6.getText().toString());
-                double result1 = Calcpoo(value4, value5, value6);
-                String formattedResul1 = String.format("%.2f", result1 / 4); // Formater le résultat avec deux décimales
-                show2.setText(formattedResul1);
 
-                double value7 = Double.parseDouble(ed7.getText().toString());
-                double value8 = Double.parseDouble(ed8.getText().toString());
-                double value9 = Double.parseDouble(ed8.getText().toString());
-                double result2 = calcproba(value7, value8, value9);
-                String formattedResul2 = String.format("%.2f", result2 / 4); // Formater le résultat avec deux décimales
-                show3.setText(formattedResul2);
+                if (ed1.getText().toString().equals("") || ed2.getText().toString().equals("") ||
+                        ed3.getText().toString().equals("") || ed4.getText().toString().equals("") ||
+                        ed5.getText().toString().equals("") || ed6.getText().toString().equals("") ||
+                        ed7.getText().toString().equals("") || ed8.getText().toString().equals("") ||
+                        ed9.getText().toString().equals("") || ed10.getText().toString().equals("") ||
+                        ed11.getText().toString().equals("") || ed12.getText().toString().equals("") ||
+                        ed13.getText().toString().equals("") || ed14.getText().toString().equals("") ||
+                        ed15.getText().toString().equals("") || ed16.getText().toString().equals("") ||
+                        ed17.getText().toString().equals("") || ed18.getText().toString().equals("") ||
+                        ed19.getText().toString().equals("") || ed20.getText().toString().equals("") ||
+                        ed21.getText().toString().equals("") || ed22.getText().toString().equals("")) {
 
-                double value10 = Double.parseDouble(ed10.getText().toString());
-                double value11 = Double.parseDouble(ed11.getText().toString());
-                double value12= Double.parseDouble(ed12.getText().toString());
-                double result3 = calclogique(value10, value11, value12);
-                String formattedResul3 = String.format("%.2f", result3 / 4); // Formater le résultat avec deux décimales
-                show4.setText(formattedResul3);
+              showWarningDialog();
+                } else {
+                    double value1 = Double.parseDouble(ed1.getText().toString());
+                    double value2 = Double.parseDouble(ed2.getText().toString());
+                    double value3 = Double.parseDouble(ed3.getText().toString());
+                    double value4 = Double.parseDouble(ed4.getText().toString());
+                    double value5 = Double.parseDouble(ed5.getText().toString());
+                    double value6 = Double.parseDouble(ed6.getText().toString());
+                    double value7 = Double.parseDouble(ed7.getText().toString());
+                    double value8 = Double.parseDouble(ed8.getText().toString());
+                    double value9 = Double.parseDouble(ed8.getText().toString());
+                    double value10 = Double.parseDouble(ed10.getText().toString());
+                    double value11 = Double.parseDouble(ed11.getText().toString());
+                    double value12= Double.parseDouble(ed12.getText().toString());
+                    double value13 = Double.parseDouble(ed13.getText().toString());
+                    double value14 = Double.parseDouble(ed14.getText().toString());
+                    double value15= Double.parseDouble(ed15.getText().toString());
+                    double value16 = Double.parseDouble(ed16.getText().toString());
+                    double value17 = Double.parseDouble(ed17.getText().toString());
+                    double value18= Double.parseDouble(ed18.getText().toString());
+                    double value19 = Double.parseDouble(ed19.getText().toString());
+                    double value20 = Double.parseDouble(ed20.getText().toString());
+                    double value21= Double.parseDouble(ed21.getText().toString());
+                    double value22 = Double.parseDouble(ed22.getText().toString());
 
+                    double result = CalcAnalyse(value1, value2, value3);
+                    String formattedResult = String.format("%.2f", result / 5); // Formater le résultat avec deux décimales
+                    show1.setText(formattedResult);
 
-                double value13 = Double.parseDouble(ed13.getText().toString());
-                double value14 = Double.parseDouble(ed14.getText().toString());
-                double value15= Double.parseDouble(ed15.getText().toString());
-                double result4 = calcoptique(value13, value14, value15);
-                String formattedResul4 = String.format("%.2f", result4 / 3); // Formater le résultat avec deux décimales
-                show5.setText(formattedResul4);
-
-
-                double value16 = Double.parseDouble(ed16.getText().toString());
-                double value17 = Double.parseDouble(ed17.getText().toString());
-                double value18= Double.parseDouble(ed18.getText().toString());
-                double result5 = calcisi(value16, value17, value18);
-                String formattedResul5 = String.format("%.2f", result5 / 3); // Formater le résultat avec deux décimales
-                show6.setText(formattedResul5);
-
-                double value19 = Double.parseDouble(ed19.getText().toString());
-                double value20 = Double.parseDouble(ed20.getText().toString());
-                double value21= Double.parseDouble(ed21.getText().toString());
-                double result6 = calcangalis(value19, value20, value21);
-                String formattedResul6 = String.format("%.2f", result6 / 2); // Formater le résultat avec deux décimales
-                show7.setText(formattedResul6);
-                double value22 = Double.parseDouble(ed22.getText().toString());
-                double result7 = calcprojet(value22);
-                String formattedResul7 = String.format("%.2f", result7 / 4); // Formater le résultat avec deux décimales
-                show8.setText(formattedResul7);
+                    double result1 = Calcpoo(value4, value5, value6);
+                    String formattedResul1 = String.format("%.2f", result1 / 4); // Formater le résultat avec deux décimales
+                    show2.setText(formattedResul1);
 
 
-                double showfinal3 = result + result1 + result2 + result3 + result4 + result5 + result6 + result7 ;
-                String formattedResul8 = String.format("%.2f", showfinal3 / 29); // Formater le résultat avec deux décimales
+                    double result2 = calcproba(value7, value8, value9);
+                    String formattedResul2 = String.format("%.2f", result2 / 4); // Formater le résultat avec deux décimales
+                    show3.setText(formattedResul2);
 
-         showfinal.setText(formattedResul8);
+
+                    double result3 = calclogique(value10, value11, value12);
+                    String formattedResul3 = String.format("%.2f", result3 / 4); // Formater le résultat avec deux décimales
+                    show4.setText(formattedResul3);
+
+
+
+                    double result4 = calcoptique(value13, value14, value15);
+                    String formattedResul4 = String.format("%.2f", result4 / 3); // Formater le résultat avec deux décimales
+                    show5.setText(formattedResul4);
+
+
+
+                    double result5 = calcisi(value16, value17, value18);
+                    String formattedResul5 = String.format("%.2f", result5 / 3); // Formater le résultat avec deux décimales
+                    show6.setText(formattedResul5);
+
+
+                    double result6 = calcangalis(value19, value20, value21);
+                    String formattedResul6 = String.format("%.2f", result6 / 2); // Formater le résultat avec deux décimales
+                    show7.setText(formattedResul6);
+
+                    double result7 = calcprojet(value22);
+                    String formattedResul7 = String.format("%.2f", result7 / 4); // Formater le résultat avec deux décimales
+                    show8.setText(formattedResul7);
+
+
+                    double showfinal3 = result + result1 + result2 + result3 + result4 + result5 + result6 + result7 ;
+                    String formattedResul8 = String.format("%.2f", showfinal3 / 29); // Formater le résultat avec deux décimales
+
+                    showfinal.setText(formattedResul8);
+                }
+
+
             }
         });
 
@@ -159,5 +186,21 @@ Button calc ;
         return (ed22 * 4);
     }
 
+
+    private void showWarningDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Warning")
+                .setMessage("This is a warning message!")
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Action to perform when OK button is clicked
+                    }
+                });
+
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
 
 }

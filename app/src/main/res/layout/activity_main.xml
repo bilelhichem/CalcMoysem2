@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
+    android:background="@color/white"
     >
 
     <LinearLayout
@@ -19,7 +20,7 @@
      android:layout_width="85dp"
      android:layout_height="wrap_content"
      android:text="Analyse"
-     android:textColor="@color/black"
+     android:textColor="@color/white"
      android:padding="10dp"
      android:background="@drawable/myback"
      >
@@ -78,7 +79,7 @@
             android:layout_width="85dp"
             android:layout_height="wrap_content"
             android:text="Poo"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:padding="10dp"
             android:background="@drawable/myback"
             >
@@ -88,7 +89,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -99,7 +100,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -110,7 +111,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -139,7 +140,7 @@
             android:layout_width="85dp"
             android:layout_height="wrap_content"
             android:text="proba"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:padding="10dp"
             android:background="@drawable/myback"
             >
@@ -149,7 +150,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -160,7 +161,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -171,7 +172,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -199,7 +200,7 @@
             android:layout_width="85dp"
             android:layout_height="wrap_content"
             android:text="logique"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:padding="10dp"
             android:background="@drawable/myback"
             >
@@ -209,7 +210,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -221,7 +222,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -233,7 +234,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -261,7 +262,7 @@
             android:layout_width="85dp"
             android:layout_height="wrap_content"
             android:text="optiaqe"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:padding="10dp"
             android:background="@drawable/myback"
             >
@@ -271,7 +272,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -282,7 +283,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -293,7 +294,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -322,7 +323,7 @@
             android:layout_width="85dp"
             android:layout_height="wrap_content"
             android:text="isi"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:padding="10dp"
             android:background="@drawable/myback"
             >
@@ -332,7 +333,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -343,7 +344,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -354,7 +355,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -383,7 +384,7 @@
             android:layout_width="85dp"
             android:layout_height="wrap_content"
             android:text="anglais"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:padding="10dp"
             android:background="@drawable/myback"
             >
@@ -393,7 +394,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -404,7 +405,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -415,7 +416,7 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:padding="7dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:background="@drawable/myback"
             android:layout_marginLeft="5dp"
             >
@@ -444,7 +445,7 @@
             android:layout_width="85dp"
             android:layout_height="wrap_content"
             android:text="projet"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:padding="10dp"
             android:background="@drawable/myback"
             >
@@ -456,7 +457,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:background="@drawable/myback"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:padding="7dp">
 
         </EditText>
@@ -479,8 +480,8 @@
         android:layout_height="70dp"
         android:layout_gravity="center"
         android:background="@drawable/myback"
-        android:backgroundTint="#C51162"
-        android:textColor="@color/black"
+        android:backgroundTint="#000000"
+        android:textColor="@color/white"
         android:text="CALC"
         android:layout_marginTop="20dp"
         >
