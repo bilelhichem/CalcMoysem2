@@ -45,7 +45,7 @@ Button calc ;
                     double value6 = Double.parseDouble(ed6.getText().toString());
                     double value7 = Double.parseDouble(ed7.getText().toString());
                     double value8 = Double.parseDouble(ed8.getText().toString());
-                    double value9 = Double.parseDouble(ed8.getText().toString());
+                    double value9 = Double.parseDouble(ed9.getText().toString());
                     double value10 = Double.parseDouble(ed10.getText().toString());
                     double value11 = Double.parseDouble(ed11.getText().toString());
                     double value12= Double.parseDouble(ed12.getText().toString());
